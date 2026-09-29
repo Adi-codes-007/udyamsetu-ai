@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-900: #0f2235;
+    --primary-800: #17324d;
+    --primary-700: #1f4e79;
+    --primary-600: #2a6699;
+    --secondary-700: #23526a;
+    --secondary-600: #2f6b8a;
+    --secondary-500: #428ba8;
+    
+    --bg-page: #f5f7fa;
+    --bg-card: #ffffff;
+    --bg-muted: #edf2f7;
+    
+    --text-primary: #17202a;
+    --text-secondary: #344054;
+    --text-muted: #667085;
+    --text-light: #98a2b3;
+    
+    --border-color: #d9e1e8;
+    --border-subtle: #e8eef3;
+    
+    --success: #16855b;
+    --success-light: #e8f5ef;
+    --warning: #d9822b;
+    --warning-light: #fdf5ea;
+    --danger: #c93636;
+    --danger-light: #fcedec;
+    --info: #1f4e79;
+    --info-light: #edf4fa;
+  }
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for enterprise data views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f4f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5d1dc;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9faec0;
+}
+
+/* Government tech utility classes */
+.gov-card {
+  background: #ffffff;
+  border: 1px solid #d9e1e8;
+  box-shadow: 0 1px 3px 0 rgba(15, 34, 53, 0.04);
+}
+
+.gov-card-hover {
+  transition: all 0.15s ease-in-out;
+}
+.gov-card-hover:hover {
+  border-color: #b8c9d9;
+  box-shadow: 0 4px 12px 0 rgba(15, 34, 53, 0.08);
+}
+
+.gov-badge-success {
+  background-color: #e8f5ef;
+  color: #16855b;
+  border: 1px solid #c2e5d5;
+}
+
+.gov-badge-warning {
+  background-color: #fdf5ea;
+  color: #c06c1c;
+  border: 1px solid #f6deb9;
+}
+
+.gov-badge-danger {
+  background-color: #fcedec;
+  color: #c93636;
+  border: 1px solid #f8c9c9;
+}
+
+.gov-badge-info {
+  background-color: #edf4fa;
+  color: #1f4e79;
+  border: 1px solid #c8dced;
+}
+
+.gov-badge-neutral {
+  background-color: #f2f5f8;
+  color: #475467;
+  border: 1px solid #d0dbe5;
+}
