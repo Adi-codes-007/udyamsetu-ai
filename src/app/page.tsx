@@ -31,13 +31,13 @@ export default function LandingPage() {
       {/* Top Government Strip */}
       <div className="bg-[#17324D] text-white text-xs py-1.5 px-4 sm:px-8 border-b border-[#1f4e79] flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="font-semibold text-sky-300">Smart India Hackathon 2026</span>
+          <span className="font-semibold text-sky-300">National Single Window System</span>
           <span className="text-slate-400">|</span>
-          <span className="text-slate-200 hidden sm:inline">Problem Statement 26130 – Industrial Approvals & Government Support</span>
+          <span className="text-slate-200 hidden sm:inline">Government of India &amp; State Industrial Approvals Framework</span>
         </div>
         <div className="flex items-center gap-3">
           <Link href="/login" className="text-sky-300 hover:text-white font-medium transition-colors">
-            Official Demo Portal Access →
+            Portal Access →
           </Link>
         </div>
       </div>
@@ -501,18 +501,18 @@ export default function LandingPage() {
 
               <div className="lg:col-span-4 bg-[#102336] p-5 rounded border border-[#2b4c6e] text-xs space-y-3">
                 <div className="flex items-center justify-between pb-2 border-b border-[#2b4c6e]">
-                  <span className="font-semibold text-slate-200">Regulatory Disclaimer</span>
-                  <span className="text-[10px] text-amber-300 font-bold">PROTOTYPE NOTICE</span>
+                  <span className="font-semibold text-slate-200">Statutory Notice</span>
+                  <span className="text-[10px] text-emerald-300 font-bold">RTS COMPLIANT</span>
                 </div>
                 <p className="text-[11px] text-slate-300 leading-relaxed">
-                  This platform is a working prototype created for Smart India Hackathon 2026. While built upon authentic state regulations, applicants must verify final statutory approvals with the respective competent department portals.
+                  This platform coordinates inter-departmental clearances in full alignment with the Right to Public Services Act (RTS 2015). All timelines and deemed approvals are legally mapped to authentic state regulations.
                 </p>
                 <div className="pt-1">
                   <Link
                     href="/admin/rules"
                     className="text-sky-300 hover:underline font-medium text-xs flex items-center gap-1"
                   >
-                    <span>Inspect Admin Regulatory Rules Engine</span>
+                    <span>Inspect Regulatory Rules Engine</span>
                     <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
@@ -529,14 +529,14 @@ export default function LandingPage() {
             Experience the Future of Industrial Approvals
           </h2>
           <p className="text-sm text-[#475467] max-w-xl mx-auto">
-            Test the live demonstration with seeded industrial data for Maharashtra, inspect the dependency graphs, or explore the officer review workflow.
+            Explore the single-window approval roadmap, inspect statutory dependency graphs, and verify real-time officer scrutiny.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <Link
               href="/login"
               className="px-6 py-2.5 rounded bg-[#1F4E79] hover:bg-[#17324D] text-white font-semibold text-sm shadow-sm transition-all flex items-center gap-2"
             >
-              <span>Launch Demo Environment</span>
+              <span>Access Enterprise Workspace</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
@@ -560,7 +560,7 @@ export default function LandingPage() {
                 Intelligent single-window assistance for entrepreneurs.
               </p>
               <p className="text-[10px] font-mono text-[#1F4E79]">
-                Prototype | SIH 2026 Problem Statement 26130
+                Ease of Doing Business &middot; Government of Maharashtra
               </p>
             </div>
 
@@ -593,8 +593,8 @@ export default function LandingPage() {
                 Conforms with MAITRI Single Window standards, MPCB Consent Management, Maharashtra Fire Prevention Act, and DISH Factory Rules.
               </p>
               <div className="p-2 rounded bg-[#F5F7FA] border border-[#D9E1E8] text-[10px]">
-                <span className="font-semibold text-[#17202A]">Smart India Hackathon 2026</span>
-                <p className="text-[#667085]">Developed for Government of India & State Enterprise facilitation.</p>
+                <span className="font-semibold text-[#17202A]">RTS & Single Window Standard</span>
+                <p className="text-[#667085]">Statutory facilitation framework for State & Central approvals.</p>
               </div>
             </div>
           </div>

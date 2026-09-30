@@ -36,7 +36,7 @@ export default function RegisterPage() {
     <div className="min-h-screen flex flex-col justify-center bg-[#F5F7FA]">
       <div className="bg-[#17324D] text-white text-[11px] py-1.5 px-6 border-b border-[#1f4e79] flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="font-semibold text-sky-300">Smart India Hackathon 2026</span>
+          <span className="font-semibold text-sky-300">National Single Window System</span>
           <span className="text-slate-400">|</span>
           <span>Enterprise Registration System</span>
         </div>
@@ -54,7 +54,29 @@ export default function RegisterPage() {
             </span>
           </div>
 
-          <div className="mt-4">
+          {/* Quick Tab Switcher */}
+          <div className="flex items-center gap-1 p-1 bg-[#F5F7FA] border border-[#D9E1E8] rounded-md mt-3 mb-4">
+            <Link
+              href="/auth"
+              className="flex-1 py-1.5 text-xs font-semibold rounded text-[#667085] hover:text-[#17202A] text-center"
+            >
+              Sign In
+            </Link>
+            <Link
+              href="/register"
+              className="flex-1 py-1.5 text-xs font-semibold rounded bg-[#1F4E79] text-white shadow-xs text-center"
+            >
+              Register New Enterprise
+            </Link>
+            <Link
+              href="/auth?tab=sso"
+              className="flex-1 py-1.5 text-xs font-semibold rounded text-[#667085] hover:text-[#17202A] text-center"
+            >
+              MeriPehchan / SSO
+            </Link>
+          </div>
+
+          <div className="mt-2">
             <h2 className="text-lg font-bold text-[#17202A]">Create Enterprise Account</h2>
             <p className="text-xs text-[#667085] mt-0.5">
               Register your business profile to generate your unified industrial clearance roadmap.

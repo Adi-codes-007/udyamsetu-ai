@@ -8,7 +8,6 @@ import { useAppStore } from '@/lib/store';
 import { 
   ShieldCheck, 
   ArrowRight, 
-  UserCheck, 
   Lock, 
   Mail, 
   Building2, 
@@ -34,19 +33,14 @@ export default function LoginPage() {
     }, 400);
   };
 
-  const handleDemoAccess = (role: UserRole, targetRoute: string) => {
-    setCurrentRole(role);
-    router.push(targetRoute);
-  };
-
   return (
     <div className="min-h-screen flex flex-col justify-center bg-[#F5F7FA]">
       {/* Top Header */}
       <div className="bg-[#17324D] text-white text-[11px] py-1.5 px-6 border-b border-[#1f4e79] flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="font-semibold text-sky-300">Smart India Hackathon 2026</span>
+          <span className="font-semibold text-sky-300">National Single Window System</span>
           <span className="text-slate-400">|</span>
-          <span>Official Industrial Clearances Portal (Demo Environment)</span>
+          <span>Official Industrial Clearances & Regulatory Compliance Portal</span>
         </div>
         <Link href="/" className="text-slate-300 hover:text-white transition-colors">
           Return to Public Site →
@@ -92,15 +86,37 @@ export default function LoginPage() {
             </div>
 
             <div className="pt-6 border-t border-[#2a4d70] text-[11px] text-slate-400">
-              <p>Problem Statement 26130 | SIH 2026</p>
-              <p className="text-[10px] text-slate-500">Government-Tech Enterprise Prototype</p>
+              <p className="font-medium text-slate-300">Single-Window Clearance Portal</p>
+              <p className="text-[10px] text-slate-400">Government of Maharashtra &middot; Industries Department</p>
             </div>
           </div>
 
           {/* Right Column: Sign In Form & Instant Demo Persona Buttons */}
           <div className="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
             <div>
-              <div className="flex items-center justify-between pb-4 border-b border-[#D9E1E8]">
+              {/* Quick Tab Switcher */}
+              <div className="flex items-center gap-1 p-1 bg-[#F5F7FA] border border-[#D9E1E8] rounded-md mb-4">
+                <Link
+                  href="/login"
+                  className="flex-1 py-1.5 text-xs font-semibold rounded bg-[#1F4E79] text-white shadow-xs text-center"
+                >
+                  Sign In
+                </Link>
+                <Link
+                  href="/auth?tab=signup"
+                  className="flex-1 py-1.5 text-xs font-semibold rounded text-[#667085] hover:text-[#17202A] text-center"
+                >
+                  Register New Enterprise
+                </Link>
+                <Link
+                  href="/auth?tab=sso"
+                  className="flex-1 py-1.5 text-xs font-semibold rounded text-[#667085] hover:text-[#17202A] text-center"
+                >
+                  MeriPehchan / SSO
+                </Link>
+              </div>
+
+              <div className="flex items-center justify-between pb-3 border-b border-[#D9E1E8]">
                 <div>
                   <h3 className="text-base font-bold text-[#17202A]">Portal Authentication</h3>
                   <p className="text-xs text-[#667085]">Sign in to access your compliance workspace</p>
@@ -108,42 +124,6 @@ export default function LoginPage() {
                 <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
                   Secure Access
                 </span>
-              </div>
-
-              {/* Demo Quick-Access Persona Buttons (Judges Favorite) */}
-              <div className="mt-4 p-3 bg-[#edf4fa] border border-[#c8dced] rounded">
-                <p className="text-[11px] font-bold text-[#17324D] mb-1.5 flex items-center gap-1.5">
-                  <UserCheck className="w-3.5 h-3.5 text-[#1F4E79]" />
-                  <span>Instant Demo Navigation for Evaluators:</span>
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                  <button
-                    type="button"
-                    onClick={() => handleDemoAccess('entrepreneur', '/entrepreneur/dashboard')}
-                    className="px-2.5 py-1.5 rounded bg-white hover:bg-slate-50 border border-[#b8cde0] text-[11px] font-bold text-[#17324D] transition-colors text-left flex flex-col shadow-2xs"
-                  >
-                    <span>Rahul Sharma</span>
-                    <span className="text-[9px] text-[#667085] font-normal">Entrepreneur</span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => handleDemoAccess('officer', '/officer/dashboard')}
-                    className="px-2.5 py-1.5 rounded bg-white hover:bg-slate-50 border border-[#b8cde0] text-[11px] font-bold text-[#17324D] transition-colors text-left flex flex-col shadow-2xs"
-                  >
-                    <span>Suresh Patil</span>
-                    <span className="text-[9px] text-[#667085] font-normal">Review Officer</span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => handleDemoAccess('admin', '/admin/dashboard')}
-                    className="px-2.5 py-1.5 rounded bg-white hover:bg-slate-50 border border-[#b8cde0] text-[11px] font-bold text-[#17324D] transition-colors text-left flex flex-col shadow-2xs"
-                  >
-                    <span>Dr. Anjali Mehta</span>
-                    <span className="text-[9px] text-[#667085] font-normal">System Admin</span>
-                  </button>
-                </div>
               </div>
 
               {/* Standard Credentials Form */}

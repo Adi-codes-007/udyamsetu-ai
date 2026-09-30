@@ -119,10 +119,10 @@ export function Navbar() {
             <button
               onClick={() => setShowRoleMenu(!showRoleMenu)}
               className="flex items-center gap-2 px-2.5 py-1.5 rounded text-xs font-medium border border-[#D9E1E8] bg-[#F5F7FA] hover:bg-[#edf2f7] text-[#17202A] transition-colors"
-              title="Click to switch persona (Judge Demo Mode)"
+              title="Switch user workspace role"
             >
               <div className="w-2 h-2 rounded-full bg-[#1F4E79]" />
-              <span className="text-[#667085] text-[11px]">Persona:</span>
+              <span className="text-[#667085] text-[11px]">Role:</span>
               <span className="font-semibold capitalize text-[#17324D]">{currentUser.role}</span>
               <ChevronDown className="w-3.5 h-3.5 text-[#667085]" />
             </button>
@@ -130,8 +130,8 @@ export function Navbar() {
             {showRoleMenu && (
               <div className="absolute right-0 mt-1 w-64 bg-white border border-[#D9E1E8] rounded shadow-lg z-50 py-1 text-xs">
                 <div className="px-3 py-1.5 border-b border-[#D9E1E8] bg-[#F5F7FA]">
-                  <p className="font-semibold text-[#17202A]">Switch Demo Persona</p>
-                  <p className="text-[10px] text-[#667085]">Instant navigation for Hackathon judges</p>
+                  <p className="font-semibold text-[#17202A]">Switch Active Role</p>
+                  <p className="text-[10px] text-[#667085]">Switch between portal workspaces</p>
                 </div>
 
                 <button

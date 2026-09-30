@@ -24,6 +24,7 @@ import {
   BookOpen,
   Users,
   LineChart,
+  Zap,
 } from 'lucide-react';
 
 export function Sidebar() {
@@ -37,6 +38,7 @@ export function Sidebar() {
     { label: 'Business Profile', href: '/entrepreneur/business-profile', icon: Building2 },
     { label: 'Approval Roadmap', href: '/entrepreneur/approval-roadmap', icon: Map },
     { label: 'Dependency Graph', href: '/entrepreneur/dependency-graph', icon: GitFork },
+    { label: 'Cross-Audit & Deadlocks', href: '/entrepreneur/deadlock-resolver', icon: Zap, badge: 'NEW' },
     { label: 'Document Center', href: '/entrepreneur/documents', icon: Files },
     { label: 'Document OCR AI', href: '/entrepreneur/documents/ocr', icon: ScanText },
     { label: 'Application Tracker', href: '/entrepreneur/applications', icon: ClipboardList },
